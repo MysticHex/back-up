@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #363740;
+}
+div.login-box {
+  top: 50%;
+  right: 50%;
+  position: absolute;
+  transform: translate(50%, -50%);
+  height: fit-content;
+  width: 380px;
+  border-radius: 8px;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #dfe0eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+div.login-box > p#head {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 19px;
+}
+div.login-box > h4 {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+div.login-box > p#sub {
+  text-align: center;
+  font-size: 14px;
+}
+.blur {
+  color: #a4a6b3;
+}
+.input-box {
+  transform: translateX(10%);
+  width: fit-content;
+}
+div.password > p {
+  display: inline-block;
+}
+a {
+  padding: 0;
+  margin: 0;
+}
+label {
+  font-size: smaller;
+  font-weight: 400;
+}
+div.password > p {
+  font-size: smaller;
+  font-weight: 400;
+}
+input.inp {
+  border-radius: 8px;
+  border: 1px solid #f0f1f7;
+  width: 316px;
+  height: 42px;
+  font-size: 18px;
+  padding-left: 10px;
+
+}
+input.inp::placeholder {
+  font-size: 16px;
+  color: #4b506d;
+}
+#btn {
+  border-radius: 8px;
+  background: #3751ff;
+  box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24);
+}
+#link {
+  padding-left: 27.9%;
+  font-size: 12px;
+  text-decoration: none;
+}
+div.signup {
+  text-align: center;
+}
+div.signup > p {
+  display: inline-block;
+}
+div.signup > a {
+  font-weight: 600;
+  text-decoration: none;
+}
+div#toggle {
+  position: absolute;
+  background: url(./asset/show.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-115%) translateX(866%);
+  cursor: pointer;
+}
+#toggle.hide {
+  background: url(./asset/hide.png);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  div.login-box {
+    position: absolute;
+    transform: scale(0.9) translateX(212px) translateY(-60%);
+    /* transform: translate(50%,-50%); */
+
+    /* transform: scale(0.9);  */
+    /* translate:25%,-25% ; */
+  }
+}

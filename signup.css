@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-color: #403636;
+}
+div.signup-box{
+    transform: translateY(10px);
+    margin-right: auto;
+    margin-left: auto;
+    width: 380px;
+    background:white;
+    border-radius: 8px;
+}
+div.signup-box>p{
+    font-weight: 700; 
+    text-align: center; 
+    margin-top: 10px; 
+    font-size: 19px;
+}
+div.signup-box>h4{
+    font-weight: 600;
+    text-align: center;
+}
+div.signup-box>p#wlcm{
+    font-size: 14px;
+    font-weight: 500;
+}
+label{
+    font-size: smaller;
+    font-weight: 400;
+}
+.inp{
+	border-radius: 8px;
+	border: 1px solid #f0f1f7;
+	width: 316px;
+	height: 42px;
+	font-size: 18px;
+	padding-left: 8px;
+}
+.pass{
+    padding-right: 9%;
+}
+.inp::placeholder{
+    font-size: 16px;
+    color: #4B506D;
+    /* padding-left: 5px; */
+}
+.form{
+    transform: translateX(32px);
+
+}
+.blur {
+    color: #a4a6b3;
+}
+div.login{
+    transform: translateX(-32px);
+    text-align: center;
+    margin-top: 32px;
+}
+div.login>p{
+    display: inline-block;
+}
+div.login>a{
+    text-decoration: none;
+    font-weight: 600;
+}
+div#toggle,div#toggle2{
+    position: absolute;
+    background: url(./asset/show.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-115%) translateX(920%);
+    cursor: pointer;
+}
+#toggle.hide,#toggle2.hide{
+    background: url(./asset/hide.png);
+    background-size: cover;
+}
+.pass{
+    display: inline;
+}
+@media only screen and (max-width:600px) {
+    div.signup-box{
+        transform: scale(0.95);
+    }
+}
